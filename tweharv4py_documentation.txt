@@ -1,0 +1,5 @@
+Some resources:
+1) Twitter offical libraries for different languages: https://dev.twitter.com/resources/twitter-libraries
+2) One tutorial for crawling Tweet using python: http://socialmedia-class.org/twittertutorial.html
+3) Tweet crawling in Tweet API including two ways: Streaming API(get the data from now on), Search API(get the data in history)
+
