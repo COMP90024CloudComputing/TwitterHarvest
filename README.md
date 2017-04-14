@@ -15,7 +15,7 @@ Boto use two keys to connect to nectar:
 
 *Go nectar security
 
-*API*
+*API Access
 
 *Download ec2 credentials 
 
