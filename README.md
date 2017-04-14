@@ -14,10 +14,15 @@ In order to use Boto, run the following command on the Ubuntu(Login to instances
 Boto use two keys to connect to nectar:
 
 *Go nectar security
+
 *API*
+
 *Download ec2 credentials 
+
 *Open ec2rc.sh 
+
 *Copy the keys to replace the codes
+
 
 To view the instances on nectar, run the connectboto.py.
 
