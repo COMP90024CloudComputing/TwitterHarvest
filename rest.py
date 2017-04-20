@@ -41,7 +41,8 @@ api = tweepy.API(auth)
 if (not api):
     print ("Problem connecting to API")
 
-api = tweepy.API(auth, #monitor_rate_limit=True, 
+api = tweepy.API(auth, #monitor_rate_limit=True,
+           retry_count=1000,retry_delay=5,retry_errors=set([401, 404, 500, 503]),
             	wait_on_rate_limit=True,
             		wait_on_rate_limit_notify=True)
 
@@ -75,7 +76,6 @@ while tweetCount < maxTweets:
         
         if not new_tweets:
             print("No more tweets found")
-            break
 
         for tweet in new_tweets:
             data = json.loads(jsonpickle.encode(tweet._json))
