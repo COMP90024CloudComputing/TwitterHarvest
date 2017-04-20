@@ -27,3 +27,9 @@ Boto use two keys to connect to nectar:
 To view the instances on nectar, run the connectboto.py.
 
 For other functions of Boto, see lecture5's slides.
+
+#Python Tweepy Rest Api
+
+http://www.nirg.net/using-tweepy.html
+https://www.karambelkar.info/2015/01/how-to-use-twitters-search-rest-api-most-effectively./
+http://www.dealingdata.net/2016/07/23/PoGo-Series-Tweepy/
