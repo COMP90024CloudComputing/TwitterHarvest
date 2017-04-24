@@ -5,15 +5,16 @@ import jsonpickle
 import sys,os
 import time
 
+
 maxTweets = 10000000 # Some arbitrary large number
 tweetsPerQry = 100  # this is the max the API permits
 tweetCount = 0
 
-oauth_keys = [["k687eBqLZnS6UOtx6etDg2UnX", "aDbBWi9hAG703xNFXCTIEG6pB2qGsHLoUvvhIpnIjJZVbL4dBe", "762662430-VfMM4zSLxQBtYNInjvwqaYbVKbOxfna5faf3u8J2", "ZaJZzWt1zcwPd9yh4F64aLnfzg0PyJHUE0T8iXgU2yjce"],
-              ["wEkdhaqWDQNZQVY3E0YD1fler", "2w0bhxYGBDIHcERBewYi5Ykv497NilJ27UV6S1tsEEq9u5NmAo", "762662430-bjXItOt3fEE8R9mBlD9Be1x70uRmeFbNWh2g0NNV", "gcvMWQkl8zLUW0eQuFgtacrD5ByghJlq226ewzdfbL9Pj"],
-              ["KuzAGiFtOlmYSbPVr1rBHgHL6", "BHX5PJvjm1tx318ovvs65gAWeZoZARXwV9BZn2OAJwq4UPeo64", "839300214410207232-SJlWiB6lgyqF3kvyAoHdPvfa7dCPLpf", "mX2lJ9lSViNvMw7ydSaLYZT9jT8YtfIxhW5j5cbQAF4Yj"],
-              ["4reQgCnnupSfb91YRh2b0Z3es", "J0DleKwUVRFdMLDX2tKgvKQAKmmZBXWEI7ID0QlDyWVySb30ql", "839300214410207232-Uesl5uOmzHZsgRQSK9MLcZESihTnlyF", "uOozVm23tG4228c5oVfk82EMTPDaCw5XaokqnKQK4wGj9"],              
-              ["d6o4P8YbmQxoypzjbTqRE44m3", "kriQg5h3RPz9eQMZqlYGDSjCRDczRXG3P06NXBcF0oJDvCuaGk", "762662430-NSeAkrU4wHTTNgcaLx7EyqwHpBUSTzh5Hu0xM9Gj", "xO1QXw1FcbEZ72AyQZ8JhMA5PDKjnTPwZVCTIocMFEt9F"]]
+oauth_keys = [["RjG2NW31P2LBR14iBcl2NTtHQ", "j7Z81CvuoxlmnirBaXYvv0ncugs2qqkBhosxomwOEYESJlokO8", "856109659895218178-JwIbrtpRreIXULwSDsgS6Y9vqUjUZSz", "6gc4AOswm7ZqAebJ4VE8KItobluFcM7KZrjNPVltuTt6j"],
+              ["0OfIH1dCTHAuf5B3K8gy9Ni4X", "9BfIHjGoKLQMISkSFdc7L014RYjvQv74JowHeBbiLQ0yhksYVk", "856109659895218178-2ahh1Em96SjiGVKps00GZHy32US0ZVF", "srM8nm9z0y6sYHeeV2fv6Dxom2V60GfrqkmNHOCnn36LV"],
+              ["p6atboVqe2eN5VrXHGeh0YOuF", "UmpTijm7MpXEs9AXTDRznWhPfrhkbtkIDfQiBwnJN9dlBwBJNz", "839300214410207232-p5KRSFi3c7WLlbma9sP3cRpfX1nAoQn", "JZdKxShEDrTfNj7JMMWIR31exHNSoqzLmNzLzscZj03JF"],
+              ["hVC7zPDwRBni2lIfZDQiKdVTb", "fvWPF5tEkMEyZp9e0yQOIi9a3kzl3Bjfa1b1SfYFxjomgxHNQr", "856002238250012672-WOGROUddQLJI92zQYl07xK9zktEHN6a", "ll9lhJwZDuKIuEsviiKdeXPlpuZbyXTAN1ss6QZxiasXl"],              
+              ["GuqJrIAlenTWGJoQDXuLI78G6", "X8QGSq5cogeOBMAjrlZOO1Kh1puoIhKXuHhz80PVcq6BxOIkgb", "856109659895218178-1ON36X1qYHe7FgWY9AJOCMQ6yXV8KTq", "DUjbcjp2t5SHTXVnHQj0KLwN9WEYacD1sZCYqHLz8gNDC"]]
 '''
 consumer_key = 'k687eBqLZnS6UOtx6etDg2UnX'
 consumer_secret = 'aDbBWi9hAG703xNFXCTIEG6pB2qGsHLoUvvhIpnIjJZVbL4dBe'
@@ -29,7 +30,7 @@ except:
     raise
 
 try:
-    db = couch['syd_tweets']
+    db = couch['ade_tweets']
     print "Using mydatabase bucket"
 except:
     print ('error')
@@ -72,21 +73,19 @@ while tweetCount < maxTweets:
     if (not api):
         print ("Problem connecting to API")
 
-    
-
     try:
         if max_id <= 0:
             if (not sinceId):
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry)
+                new_tweets = api.search(q="place:01e8a1a140ccdc5c", count=tweetsPerQry)
             else:
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:01e8a1a140ccdc5c", count=tweetsPerQry,
                                             since_id=sinceId)
         else:
             if (not sinceId):
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:01e8a1a140ccdc5c", count=tweetsPerQry,
                                             max_id=str(max_id - 1))
             else:
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:01e8a1a140ccdc5c", count=tweetsPerQry,
                                             max_id=str(max_id - 1),
                                             since_id=sinceId)
         
@@ -118,11 +117,11 @@ while tweetCount < maxTweets:
         except :
             continue
 
-        print("Downloaded {0} tweets in Sydney".format(tweetCount))   
+        print("Downloaded {0} tweets in Adelaide".format(tweetCount))   
 
     except tweepy.TweepError as e:
-            
-        print "switching keys...syd"
+        
+        print "switching keys...ade"
         switch += 1
         if switch > 4:
             print "Limit reached"

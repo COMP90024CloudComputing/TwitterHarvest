@@ -5,15 +5,17 @@ import jsonpickle
 import sys,os
 import time
 
+
 maxTweets = 10000000 # Some arbitrary large number
 tweetsPerQry = 100  # this is the max the API permits
 tweetCount = 0
 
-oauth_keys = [["k687eBqLZnS6UOtx6etDg2UnX", "aDbBWi9hAG703xNFXCTIEG6pB2qGsHLoUvvhIpnIjJZVbL4dBe", "762662430-VfMM4zSLxQBtYNInjvwqaYbVKbOxfna5faf3u8J2", "ZaJZzWt1zcwPd9yh4F64aLnfzg0PyJHUE0T8iXgU2yjce"],
-              ["wEkdhaqWDQNZQVY3E0YD1fler", "2w0bhxYGBDIHcERBewYi5Ykv497NilJ27UV6S1tsEEq9u5NmAo", "762662430-bjXItOt3fEE8R9mBlD9Be1x70uRmeFbNWh2g0NNV", "gcvMWQkl8zLUW0eQuFgtacrD5ByghJlq226ewzdfbL9Pj"],
-              ["KuzAGiFtOlmYSbPVr1rBHgHL6", "BHX5PJvjm1tx318ovvs65gAWeZoZARXwV9BZn2OAJwq4UPeo64", "839300214410207232-SJlWiB6lgyqF3kvyAoHdPvfa7dCPLpf", "mX2lJ9lSViNvMw7ydSaLYZT9jT8YtfIxhW5j5cbQAF4Yj"],
-              ["4reQgCnnupSfb91YRh2b0Z3es", "J0DleKwUVRFdMLDX2tKgvKQAKmmZBXWEI7ID0QlDyWVySb30ql", "839300214410207232-Uesl5uOmzHZsgRQSK9MLcZESihTnlyF", "uOozVm23tG4228c5oVfk82EMTPDaCw5XaokqnKQK4wGj9"],              
-              ["d6o4P8YbmQxoypzjbTqRE44m3", "kriQg5h3RPz9eQMZqlYGDSjCRDczRXG3P06NXBcF0oJDvCuaGk", "762662430-NSeAkrU4wHTTNgcaLx7EyqwHpBUSTzh5Hu0xM9Gj", "xO1QXw1FcbEZ72AyQZ8JhMA5PDKjnTPwZVCTIocMFEt9F"]]
+oauth_keys = [["eNaOt7MW9SUk7zuPQpCrbXTBC", "agxEVyN5z6HtIv9LAK6CNmSU3dH194BMkuALb5oI9PU4Ui5dzK", "855999502255247360-Re3ewycQBkVi08w0rb1sp9bB40cLouA", "nisiRGg3tO50EMmbaU6MvAhnXYXe3FcQ0sjzkolDEPTyV"],
+              ["ahAzM3Wvh4YITVM60G65ZuOpP", "NbWxlbuBsoDA4HELYWlyylY0RASjm0Gtbmsn9Vzbx10ZFXDAGv", "855999502255247360-BjSm0tFrw3v3um0QTRJ0wAvmhiy7cme", "kRUY3kM5MbBNryRDMA20EN7CNE7lSdJEg3FO3z7Omm1BH"],
+              ["YFwd6NZlPBEm2Nu7VUs7eOXva", "ACa2A3C4RrV2TaSa9v1KF3ruO0zSZBC91RPYDh6K1XzYDY8rry", "855999502255247360-p93VgBZJIdb9254jAiCWzxCJ6RFJsLE", "Yrp1QszXQ2NUXJExQC4NR42ew4t7FpHKVD6EpJK8PBFZL"],
+              ["ZQGDhawy20pPmyQmKQ79CtVNu", "Y1goSHJTe70CalKKBhT7EnGgkmiffnevmEvwG34z7IRjVVbBfb", "855999502255247360-wcivhMiEXhZHw5zyDJe0QhulwLaPFUW", "pvWGE9jNQyeHLnnMFkTbXniorXIjlDKuTDBxEPQRkLfXH"],
+              ["ibSGx30BljiLofBRtS77AFETt", "4g2H14S8ugsPme1jELA6Y4O9RR5Sf8EElPLH96F5A8XFarl8VM", "855999502255247360-mwwO3oTq9TKhixLA8Exke4vgV1CnyfD", "med3gQXEWkKQtyC84zSDPIgCH3o2WrHGIx7fliTk6sJEf"]]
+
 '''
 consumer_key = 'k687eBqLZnS6UOtx6etDg2UnX'
 consumer_secret = 'aDbBWi9hAG703xNFXCTIEG6pB2qGsHLoUvvhIpnIjJZVbL4dBe'
@@ -29,7 +31,7 @@ except:
     raise
 
 try:
-    db = couch['syd_tweets']
+    db = couch['bris_tweets']
     print "Using mydatabase bucket"
 except:
     print ('error')
@@ -77,23 +79,23 @@ while tweetCount < maxTweets:
     try:
         if max_id <= 0:
             if (not sinceId):
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry)
+                new_tweets = api.search(q="place:004ec16c62325149", count=tweetsPerQry)
             else:
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:004ec16c62325149", count=tweetsPerQry,
                                             since_id=sinceId)
         else:
             if (not sinceId):
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:004ec16c62325149", count=tweetsPerQry,
                                             max_id=str(max_id - 1))
             else:
-                new_tweets = api.search(q="place:0073b76548e5984f", count=tweetsPerQry,
+                new_tweets = api.search(q="place:004ec16c62325149", count=tweetsPerQry,
                                             max_id=str(max_id - 1),
                                             since_id=sinceId)
         
         if not new_tweets:
             print "No more tweets found"
-            time.sleep(240)
-
+            time.sleep(180)
+        
             '''
             print "switching keys..."
             switch += 1
@@ -118,17 +120,16 @@ while tweetCount < maxTweets:
         except :
             continue
 
-        print("Downloaded {0} tweets in Sydney".format(tweetCount))   
+        print("Downloaded {0} tweets in Brisbane".format(tweetCount))   
 
     except tweepy.TweepError as e:
-            
-        print "switching keys...syd"
+        print "switching keys...bris"
         switch += 1
         if switch > 4:
             print "Limit reached"
             switch = 0
             time.sleep(180)
-
+         
         continue
     except StopIteration:
         break
