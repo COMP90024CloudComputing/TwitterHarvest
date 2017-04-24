@@ -1,2 +1,25 @@
 1. Permission code meaning:
   http://www.solis.co.uk/support/techie/linux/chmod
+2 steps:
+1)sudo mkfs.ext4 /dev/vdc (是不是vdc不一定，还要考虑）
+2)sudo mount /dev/vdc /mnt –t auto
+3)mkdir -p /mnt/volume2/couchdb/data
+4)sudo apt-get update
+5)sudo apt-get upgrade
+6)sudo apt-get install software-properties-common
+7)sudo add-apt-repository ppa:couchdb/stable
+8)sudo apt-get update
+9)sudo apt-get install couchdb
+10)sudo chown -R couchdb:couchdb /usr/bin/couchdb /etc/couchdb /usr/share/couchdb /mnt/volume2/couchdb
+11)sudo chmod -R 0770 /usr/bin/couchdb /etc/couchdb /usr/share/couchdb /mnt/volume2/couchdb
+12)su
+13)123456
+14)cd /etc/couchdb
+15)nano local.ini
+16)修改其中两行：
+    [couchdb]
+    database_dir = /path/to/the/databases
+    view_index_dir = /path/to/the/views
+17）systemctl restart couchdb
+18)curl localhost:5984
+19)exit
