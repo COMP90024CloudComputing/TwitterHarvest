@@ -1,28 +1,121 @@
-Streaming:
-Chi Zhang:
-1.(Mel-HAR)
-ACCESS_TOKEN = '839300214410207232-Jia98vmQtOIQaHhDDNCiJxtoJ9m35Hc'
-ACCESS_SECRET = 'qCGLAhGLqO58bkSOxymqP7v2fI6ISbBqlK2r39Emy2QhD'
+#Search_Rest API keys on HAR
+
+1. chenhanm@student.unimelb.edu.au Brisbane
+Consumer Key (API Key)	eNaOt7MW9SUk7zuPQpCrbXTBC
+Consumer Secret (API Secret agxEVyN5z6HtIv9LAK6CNmSU3dH194BMkuALb5oI9PU4Ui5dzK
+Access Token	855999502255247360-Re3ewycQBkVi08w0rb1sp9bB40cLouA
+Access Token Secret	nisiRGg3tO50EMmbaU6MvAhnXYXe3FcQ0sjzkolDEPTyV
+
+Consumer Key (API Key)	ahAzM3Wvh4YITVM60G65ZuOpP
+Consumer Secret (API Secret)	NbWxlbuBsoDA4HELYWlyylY0RASjm0Gtbmsn9Vzbx10ZFXDAGv
+Access Token	855999502255247360-BjSm0tFrw3v3um0QTRJ0wAvmhiy7cme
+Access Token Secret	kRUY3kM5MbBNryRDMA20EN7CNE7lSdJEg3FO3z7Omm1BH
+
+Consumer Key (API Key)	YFwd6NZlPBEm2Nu7VUs7eOXva
+Consumer Secret (API Secret)	ACa2A3C4RrV2TaSa9v1KF3ruO0zSZBC91RPYDh6K1XzYDY8rry
+Access Token	855999502255247360-p93VgBZJIdb9254jAiCWzxCJ6RFJsLE
+Access Token Secret	Yrp1QszXQ2NUXJExQC4NR42ew4t7FpHKVD6EpJK8PBFZL
+
+Consumer Key (API Key)	ZQGDhawy20pPmyQmKQ79CtVNu
+Consumer Secret (API Secret)	Y1goSHJTe70CalKKBhT7EnGgkmiffnevmEvwG34z7IRjVVbBfb
+Access Token	855999502255247360-wcivhMiEXhZHw5zyDJe0QhulwLaPFUW
+Access Token Secret	pvWGE9jNQyeHLnnMFkTbXniorXIjlDKuTDBxEPQRkLfXH
+
+Consumer Key (API Key)	ibSGx30BljiLofBRtS77AFETt
+Consumer Secret (API Secret)	4g2H14S8ugsPme1jELA6Y4O9RR5Sf8EElPLH96F5A8XFarl8VM
+Access Token	855999502255247360-mwwO3oTq9TKhixLA8Exke4vgV1CnyfD
+Access Token Secret	med3gQXEWkKQtyC84zSDPIgCH3o2WrHGIx7fliTk6sJEf
+——————————————————————————
+
+2. matutu22@qq.com   Melbourne
+Consumer Key (API Key)	llx6OR7HIFWpAimFvxThRntdK
+Consumer Secret (API Secret)	WBuyh0IAEOMBPqKsyKnImjIvueej56NXNj5vHI3TlfweeDpgQi
+Access Token	856001618545737728-BoqHNkQFVaNXClznkfDYhakgPWoud6z
+Access Token Secret	Cu4QIoz6mhUz9Qc4Ueugwy2whhXSfrs8aLD4pffrKQq64
+
+
+Consumer Key (API Key)	wXVze0342E0r9eeiIqgLsowrt
+Consumer Secret (API Secret)	jzLJKkcnfqyl0dwBVOFubR19rq3DCNuAWMmC79fkdXfAsatFfJ
+Access Token	856001618545737728-Jxd8wRjkWGnMLN3he1D5OMQ1UuF7PhK
+Access Token Secret	vny6hRjaRmd2pTnB6DPMi7nfFHhz9mSPKzYiXzJrAhk0a
+
+Consumer Key (API Key)	8hZKxdZp9ch6thyCI7tqx3WOg
+Consumer Secret (API Secret)	uqGOgnJMrpRToH2mwcMte2iFrTi9GmLBIQk3gTmoZkyF0495IJ
+Access Token	856001618545737728-1REmFTyWkYvZJMjoqSD6yNi7Yr4Coqc
+Access Token Secret	poslWpf4yh9QSIMhGXyG6iSwQoP8LGFFH4MWs5UvvymcE
+
+Consumer Key (API Key)	54W4z7VC7Oob7aJR2TkrGTnzL
+Consumer Secret (API Secret)	1Ihs49YgblkMQEJzgvyqcnPTc9CBA2DmWlasvTGzSrzG7XUHkJ
+Access Token	855999502255247360-RnabWffcqlxWw6ag1T5hd5Eymhg5rZn
+Access Token Secret	Pm1DT3EyHS8YVffnUZKs6lFKtfrN5eKVPDqLCA1Tv9dsd
+
 CONSUMER_KEY = 'TcHoempgSuQkcbeIcBQPzLMqi'
 CONSUMER_SECRET = 'VqNr0PugcJqHhwR8cHcI7ocRVDTcA5UAQGGpEoWHZJsIrY9Xuz'
+ACCESS_TOKEN = '839300214410207232-Jia98vmQtOIQaHhDDNCiJxtoJ9m35Hc'
+ACCESS_SECRET = 'qCGLAhGLqO58bkSOxymqP7v2fI6ISbBqlK2r39Emy2QhD'
 
-2.(Bris-HAR)
-ACCESS_TOKEN = '839300214410207232-SJlWiB6lgyqF3kvyAoHdPvfa7dCPLpf'
-ACCESS_SECRET = 'mX2lJ9lSViNvMw7ydSaLYZT9jT8YtfIxhW5j5cbQAF4Yj'
+
+
+4.  Sydney
+consumer_key = 'k687eBqLZnS6UOtx6etDg2UnX'
+consumer_secret = 'aDbBWi9hAG703xNFXCTIEG6pB2qGsHLoUvvhIpnIjJZVbL4dBe'
+access_token = '762662430-VfMM4zSLxQBtYNInjvwqaYbVKbOxfna5faf3u8J2'
+access_secret = 'ZaJZzWt1zcwPd9yh4F64aLnfzg0PyJHUE0T8iXgU2yjce'
+
+Consumer Key (API Key)	wEkdhaqWDQNZQVY3E0YD1fler
+Consumer Secret (API Secret)	2w0bhxYGBDIHcERBewYi5Ykv497NilJ27UV6S1tsEEq9u5NmAo
+Access Token	762662430-bjXItOt3fEE8R9mBlD9Be1x70uRmeFbNWh2g0NNV
+Access Token Secret	gcvMWQkl8zLUW0eQuFgtacrD5ByghJlq226ewzdfbL9Pj
+
+Consumer Key (API Key)	d6o4P8YbmQxoypzjbTqRE44m3
+Consumer Secret (API Secret)	kriQg5h3RPz9eQMZqlYGDSjCRDczRXG3P06NXBcF0oJDvCuaGk
+Access Token	762662430-NSeAkrU4wHTTNgcaLx7EyqwHpBUSTzh5Hu0xM9Gj
+Access Token Secret	xO1QXw1FcbEZ72AyQZ8JhMA5PDKjnTPwZVCTIocMFEt9F
+
 CONSUMER_KEY = 'KuzAGiFtOlmYSbPVr1rBHgHL6'
 CONSUMER_SECRET = 'BHX5PJvjm1tx318ovvs65gAWeZoZARXwV9BZn2OAJwq4UPeo64'
+ACCESS_TOKEN = '839300214410207232-SJlWiB6lgyqF3kvyAoHdPvfa7dCPLpf'
+ACCESS_SECRET = 'mX2lJ9lSViNvMw7ydSaLYZT9jT8YtfIxhW5j5cbQAF4Yj'
 
-3.(Perth-HAR)
-ACCESS_TOKEN = '839300214410207232-Uesl5uOmzHZsgRQSK9MLcZESihTnlyF'
-ACCESS_SECRET = 'uOozVm23tG4228c5oVfk82EMTPDaCw5XaokqnKQK4wGj9'
 CONSUMER_KEY = '4reQgCnnupSfb91YRh2b0Z3es'
 CONSUMER_SECRET = 'J0DleKwUVRFdMLDX2tKgvKQAKmmZBXWEI7ID0QlDyWVySb30ql'
+ACCESS_TOKEN = '839300214410207232-Uesl5uOmzHZsgRQSK9MLcZESihTnlyF'
+ACCESS_SECRET = 'uOozVm23tG4228c5oVfk82EMTPDaCw5XaokqnKQK4wGj9'
 
-4.(Syd-HAR)
-ACCESS_TOKEN = '839300214410207232-p5KRSFi3c7WLlbma9sP3cRpfX1nAoQn'
-ACCESS_SECRET = 'JZdKxShEDrTfNj7JMMWIR31exHNSoqzLmNzLzscZj03JF'
+
+
+5.  Adelaide
+Consumer Key (API Key)	RjG2NW31P2LBR14iBcl2NTtHQ
+Consumer Secret (API Secret)	j7Z81CvuoxlmnirBaXYvv0ncugs2qqkBhosxomwOEYESJlokO8
+Access Token	856109659895218178-JwIbrtpRreIXULwSDsgS6Y9vqUjUZSz
+Access Token Secret	6gc4AOswm7ZqAebJ4VE8KItobluFcM7KZrjNPVltuTt6j
+
+Consumer Key (API Key)	0OfIH1dCTHAuf5B3K8gy9Ni4X
+Consumer Secret (API Secret)	9BfIHjGoKLQMISkSFdc7L014RYjvQv74JowHeBbiLQ0yhksYVk
+Access Token	856109659895218178-2ahh1Em96SjiGVKps00GZHy32US0ZVF
+Access Token Secret	srM8nm9z0y6sYHeeV2fv6Dxom2V60GfrqkmNHOCnn36LV
+
+Consumer Key (API Key)	GuqJrIAlenTWGJoQDXuLI78G6
+Consumer Secret (API Secret)	X8QGSq5cogeOBMAjrlZOO1Kh1puoIhKXuHhz80PVcq6BxOIkgb
+Access Token	856109659895218178-1ON36X1qYHe7FgWY9AJOCMQ6yXV8KTq
+Access Token Secret	DUjbcjp2t5SHTXVnHQj0KLwN9WEYacD1sZCYqHLz8gNDC
+
 CONSUMER_KEY = 'p6atboVqe2eN5VrXHGeh0YOuF'
 CONSUMER_SECRET = 'UmpTijm7MpXEs9AXTDRznWhPfrhkbtkIDfQiBwnJN9dlBwBJNz'
+ACCESS_TOKEN = '839300214410207232-p5KRSFi3c7WLlbma9sP3cRpfX1nAoQn'
+ACCESS_SECRET = 'JZdKxShEDrTfNj7JMMWIR31exHNSoqzLmNzLzscZj03JF'
+
+Consumer Key (API Key)	hVC7zPDwRBni2lIfZDQiKdVTb
+Consumer Secret (API Secret)	fvWPF5tEkMEyZp9e0yQOIi9a3kzl3Bjfa1b1SfYFxjomgxHNQr
+Access Token	856002238250012672-WOGROUddQLJI92zQYl07xK9zktEHN6a
+Access Token Secret	ll9lhJwZDuKIuEsviiKdeXPlpuZbyXTAN1ss6QZxiasXl
+
+
+
+
+
+Streaming:
+
 
 Minhan Yan:
 5.(Ade-HAR)
