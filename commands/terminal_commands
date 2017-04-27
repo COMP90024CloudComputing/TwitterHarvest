@@ -1,7 +1,7 @@
 1. login CC-HAR:
-ssh -i cloudcomputing.key ubuntu@115.146.93.91
+ssh -i cloudcomputing.key ubuntu@115.146.92.190
 2. setup tunnel for CC_HAR(for remoting couchdb in browser)
-ssh -f -i cloudcomputing.key -L localhost:15984:127.0.0.1:5984 ubuntu@115.146.93.91 -N
+ssh -f -i cloudcomputing.key -L localhost:15984:127.0.0.1:5984 ubuntu@115.146.92.190 -N
 -----------------------------------
 3. login CC-ANA:
 ssh -i cloudcomputing.key ubuntu@115.146.93.170
@@ -9,9 +9,9 @@ ssh -i cloudcomputing.key ubuntu@115.146.93.170
 ssh -f -i cloudcomputing.key -L localhost:15985:127.0.0.1:5984 ubuntu@115.146.93.170 -N
 -----------------------------------
 5. login CC-CDB:
-ssh -i cloudcomputing.key ubuntu@115.146.93.233
+ssh -i cloudcomputing.key ubuntu@115.146.92.155
 6. setup tunnel for CC_HAR(for remoting couchdb in browser)
-ssh -f -i cloudcomputing.key -L localhost:15986:127.0.0.1:5984 ubuntu@115.146.93.233 -N
+ssh -f -i cloudcomputing.key -L localhost:15986:127.0.0.1:5984 ubuntu@115.146.92.155 -N
 -----------------------------------
 7. login CC-RES:
 ssh -i cloudcomputing.key ubuntu@115.146.93.169
