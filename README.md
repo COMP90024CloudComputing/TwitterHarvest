@@ -33,3 +33,7 @@ For other functions of Boto, see lecture5's slides.
 http://www.nirg.net/using-tweepy.html
 https://www.karambelkar.info/2015/01/how-to-use-twitters-search-rest-api-most-effectively./
 http://www.dealingdata.net/2016/07/23/PoGo-Series-Tweepy/
+
+
+#Ansible
+CMD: ansible-playbook -i [host_file] -u [Username] --key-file = PATH/TO/FILE [Name of yaml file]
