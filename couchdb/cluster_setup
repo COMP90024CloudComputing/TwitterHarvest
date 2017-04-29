@@ -1,3 +1,6 @@
 1.https://www.zybuluo.com/contribute/note/663385
 2.http://docs.couchdb.org/en/2.0.0/cluster/nodes.html#adding-a-node
 2.haproxy
+
+
+1:修改/home/couchdb/etc/下的local.ini
