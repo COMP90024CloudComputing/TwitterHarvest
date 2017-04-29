@@ -1,6 +1,39 @@
+WEBSITES:
 1.https://www.zybuluo.com/contribute/note/663385
 2.http://docs.couchdb.org/en/2.0.0/cluster/nodes.html#adding-a-node
 2.haproxy
 
+METHODS:(1-4是对每台机器,第5步是添加节点，在一台机器就行，7是添加数据库）
+1:修改/home/couchdb/etc/下的local.ini:
+    [chttpd]
+    bind_address = 0.0.0.0
+    [admins]
+    admin = password　# username = password
+2:修改/home/couchdb/etc下的vm.agrs:
+    -name couchdb@本机ip
+3:修改/home/couchdb/releases/2.0.0/下的sys.config：
+        [
+        {lager, [
+            {error_logger_hwm, 1000},
+            {error_logger_redirect, true},
+            {handlers, [
+                {lager_console_backend, [debug, {
+                    lager_default_formatter,
+                    [
+                        date, " ", time,
+                        " [", severity, "] ",
+                        node, " ", pid, " ",
+                        message,
+                        "\n"
+                    ]
+                }]}
+            ]},
+            {inet_dist_listen_min, 9100},
+            {inet_dist_listen_max, 9200}
+        ]}
+    ].
 
-1:修改/home/couchdb/etc/下的local.ini
+4.sudo sv restart couchdb
+5.curl -X PUT "http://localhost:5986/_nodes/couchdb@所加ip" -d {} --user admin(回车输入密码,需要加几个nodes就循环几次）
+6 curl -X GET "http://localhost:5984/_membership" --user admin(回车输入密码，查看目前nodes)
+7.curl -X PUT "http://localhost:5984/databasename?q=1&n=3" --user admin(回车输入密码,这个q=1, n=3应该会让数据库产生两份copy，如果不加这句默认是q=8,n=3）
