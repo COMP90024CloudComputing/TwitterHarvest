@@ -1,0 +1,5 @@
+https://www.ibm.com/developerworks/cn/opensource/os-cn-couchdb-python/index.html
+
+用db.view
+
+我们就需要在coucdb里面预先做好所有的view,程序执行时直接掉取
