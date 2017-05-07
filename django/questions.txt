@@ -1,0 +1,6 @@
+load static file error:
+  http://stackoverflow.com/questions/28055495/can-not-nest-static-tag-under-if-block-in-django-template
+  http://stackoverflow.com/questions/22650371/django-is-it-impossible-to-static-tag-into-block-tag
+  http://stackoverflow.com/questions/35837134/load-static-files-for-all-templates-in-django
+  https://docs.djangoproject.com/en/1.11/howto/static-files/
+  http://stackoverflow.com/questions/6014663/django-static-file-not-found
