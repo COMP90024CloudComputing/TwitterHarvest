@@ -13,7 +13,7 @@ In order to use Boto, run the following command on the Ubuntu(Login to instances
 
 Boto use two keys to connect to nectar:
 
-*Go nectar security
+* Go nectar security
 
 *API Access
 
